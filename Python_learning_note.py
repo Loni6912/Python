@@ -421,3 +421,30 @@ elif score >= 70:
     print("等級C")
 else:
     print("不及格")
+
+#20250131
+#第 6 天：迴圈 (for 和 while)
+for i in range(5):#變數i在範圍5(從0開始計算)之內的環圈
+    print(i)
+    # 0,1,2,3,4
+    
+x = 0
+while x < 5: #在x<5的情況下繼續迴圈
+    print(x)
+    x += 1
+    # 0,1,2,3,4
+    
+for i in range(5):
+    if i == 3:
+        break #跳出迴圈
+    print(i)
+    # 0,1,2
+    
+for i in range(5):
+    if i == 3:
+        continue #跳過這次循環
+    print(i)
+    # 0,1,2,4
+    
+#第 7 天：綜合練習
+#題目運用到了後面才會學的import因此先跳過
