@@ -448,3 +448,23 @@ for i in range(5):
     
 #第 7 天：綜合練習
 #題目運用到了後面才會學的import因此先跳過
+
+#20250203
+#第二週學習計畫：條件判斷與迴圈
+#第 1 天：條件判斷 (if-elif-else)
+#巢狀條件判斷
+age = int(input("請輸入你的年齡："))
+
+if age >= 18:
+    if age >= 65:
+        print("你是長者")
+    else:
+        print("你是成年人")
+else:
+    print("你是未成年人")
+
+
+#條件運算子
+age = int(input("請輸入年齡： "))
+status = "成年人" if age >= 18 else "未成年人"
+print(status)
