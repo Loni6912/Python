@@ -468,3 +468,135 @@ else:
 age = int(input("請輸入年齡： "))
 status = "成年人" if age >= 18 else "未成年人"
 print(status)
+
+
+#2025/02/22
+#第二週學習計畫：條件判斷與迴圈
+#第 2 天：for 迴圈
+#for 迴圈的基本語法
+for i in range(5):
+    print(i)
+    # 0,1,2,3,4
+
+#range()的步長
+#range() 的步長是指在使用 Python 的 range() 函數時，用來指定數列中相鄰數字之間的間隔大小。例如在 range(0, 10, 2) 中，步長為 2 表示會產生 0, 2, 4, 6, 8 這樣間隔為 2 的數列
+for i in range(0, 10, 2):
+    print
+    # 0,2,4,6,8
+
+#迴圈中的 else 語句
+for i in range(5):
+    print(i)
+else:
+    print("迴圈正常結束")
+
+#迴圈中的 continue 語句
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+    # 0,1,2,4
+
+#迴圈中的 break 語句
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+    # 0,1,2
+
+#迴圈中的 pass 語句
+for i in range(5):
+    if i == 3:
+        pass
+    print(i)
+    # 0,1,2,3,4
+
+#迴圈中的 enumerate() 函數
+names = ["Alice", "Bob", "Charlie"]
+for index, name in enumerate(names):
+    print(f"Index: {index}, Name: {name}")
+    # Index: 0, Name: Alice
+    # Index: 1, Name: Bob
+    # Index: 2, Name: Charlie
+
+#迴圈中的 zip() 函數
+names = ["Alice", "Bob", "Charlie"]
+ages = [25, 30, 35]
+for name, age in zip(names, ages):
+    print(f"Name: {name}, Age: {age}")
+    # Name: Alice, Age: 25
+    # Name: Bob, Age: 30
+    # Name: Charlie, Age: 35
+
+#迴圈中的 reversed() 函數
+names = ["Alice", "Bob", "Charlie"]
+for name in reversed(names):
+    print(name)
+    # Charlie, Bob, Alice
+
+#迴圈中的 sorted() 函數
+names = ["Alice", "Bob", "Charlie"]
+for name in sorted(names):
+    print(name)
+    # Alice, Bob, Charlie
+
+#迴圈中的 sorted() 函數（反向排序）
+names = ["Alice", "Bob", "Charlie"]
+for name in sorted(names, reverse=True):
+    print(name)
+    # Charlie, Bob, Alice
+
+#迴圈中的 sorted() 函數（自訂排序）
+names = ["Alice", "Bob", "Charlie"]
+for name in sorted(names, key=len):
+    print(name)
+    # Bob, Alice, Charlie
+
+#迴圈中的 sorted() 函數（自訂排序，反向）
+names = ["Alice", "Bob", "Charlie"]
+for name in sorted(names, key=len, reverse=True):
+    print(name)
+    # Charlie, Alice, Bob
+
+#遍曆字串
+for char in "Hello":
+    print(char)
+    # H, e, l, l, o
+
+#遍曆字典
+person = {"name": "Alice", "age": 25}
+for key, value in person.items():
+    print(f"Key: {key}, Value: {value}")
+    # Key: name, Value: Alice
+    # Key: age, Value: 25
+
+#遍曆集合
+colors = {"red", "green", "blue"}
+for color in colors:
+    print(color)
+    # red, green, blue
+
+#遍曆集合（有序）
+colors = ["red", "green", "blue"]
+for color in colors:
+    print(color)
+    # red, green, blue
+
+#遍曆集合（有序，反向）
+colors = ["red", "green", "blue"]
+for color in reversed(colors):
+    print(color)
+    # blue, green, red
+
+#遍曆集合（有序，排序）
+colors = ["red", "green", "blue"]
+for color in sorted(colors):
+    print(color)
+    # blue, green, red
+
+#遍曆集合（有序，排序，反向）
+colors = ["red", "green", "blue"]
+for color in sorted(colors, reverse=True):
+    print(color)
+    # red, green, blue
+
